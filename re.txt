@@ -1,0 +1,4 @@
+# For Mac, this is different from Linux installations
+brew install nvidia-container-toolkit
+
+docker build -f Dockerfile.arm -t vllm-openai:arm .
