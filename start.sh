@@ -3,6 +3,7 @@
 set -e
 
 pip install transformers 
+pip install huggingface_hub
 
 # Exécutez le modèle
 vllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-14B &
@@ -11,4 +12,4 @@ vllm serve deepseek-ai/DeepSeek-R1-Distill-Qwen-14B &
 sleep 10
 
 # Exécutez le script Python pour interagir avec le modèle
-python3 /app/main.py
+#python3 /app/main.py

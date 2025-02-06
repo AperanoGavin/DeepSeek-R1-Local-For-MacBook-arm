@@ -10,10 +10,11 @@ services:
       - ./start.sh:/app/start.sh
       - ./main.py:/app/main.py
     ports:
-      - "7001:8000"
+      - "8000:8000"
     ipc: host
-    working_dir: /app
-    entrypoint: ["/bin/bash", "-c"]
-    command: "/app/start.sh"
+    #working_dir: /app
+    #entrypoint: ["/bin/bash", "-c"]
+    #command: "/app/start.sh"
     #command: ["/bin/bash", "/app/start.sh"]
     #command: --model deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+
